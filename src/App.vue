@@ -4,6 +4,9 @@
     <nav class="navbar is-light is-medium" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://studium.umontreal.ca/">
+          <span class="icon">
+            <i class="fas fa-history"></i>
+          </span>
           <span>HST2125</span>
         </a>
         <div class="navbar-menu">
