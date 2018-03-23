@@ -1,22 +1,22 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
-//import the vue instance
+// import the vue instance
 import Vue from 'vue'
-//import the App component
+// import the App component
 import App from './App'
-//import the vue router
+// import the vue router
 import VueRouter from 'vue-router'
-//tell vue to use the router
+// tell vue to use the router
 Vue.use(VueRouter)
 //import the hello component
 import Apercu from './components/Apercu'
-//import the about component
+// import the about component
 import About from './components/About'
-//define your routes
+// define your routes
 const routes = [
-//route for the home route of the web page
+// route for the home route of the web page
 { path: '/', component: Apercu },
-//route for the about route of the web page
+// route for the about route of the web page
 { path: '/about', component: About }
 ]
 
@@ -27,14 +27,14 @@ const router = new VueRouter({
   routes, // short for routes: routes
   mode: 'history'
 })
-//instatinat the vue instance
+// instatinat the vue instance
 new Vue({
-//define the selector for the root component
+// define the selector for the root component
   el: '#app',
-  //pass the template to the root component
+  // pass the template to the root component
   template: '<App/>',
-  //declare components that the root component can access
+  // declare components that the root component can access
   components: { App },
-  //pass in the router to the Vue instance
+  // pass in the router to the Vue instance
   router
-}).$mount('#app')//mount the router on the app
+}).$mount('#app') // mount the router on the app
